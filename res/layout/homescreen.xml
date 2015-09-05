@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+      android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/back" 
+  android:gravity="center" 
+    android:weightSum="3.5" >
+
+    
+    
+
+       <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/DashboardButton"
+        android:text="DEBATE ASSISTANT"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_weight="1"
+         android:layout_centerVertical="true"
+         
+      android:gravity="center"
+      />
+
+     <RelativeLayout 
+    	
+      android:orientation="horizontal"
+      android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+         
+         android:layout_weight="1.5" >
+       <Button
+           android:id="@+id/format"
+        
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_centerVertical="true"
+         
+      android:layout_centerInParent="true"
+      
+        android:text="DEBATE FORMAT"
+           android:textColor="#FFFFFF"
+           android:textSize="25sp"
+            android:layout_gravity="center"
+           />
+  </RelativeLayout>
+  
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+     
+    android:orientation="vertical"
+    android:layout_weight="1" >
+	 
+      <com.google.android.gms.ads.AdView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4877332868062678/4193803340"
+         android:gravity="center" />
+    	
+    </RelativeLayout>
+       
+     </LinearLayout>
+       

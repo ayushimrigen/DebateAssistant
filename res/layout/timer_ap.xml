@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+android:id="@+id/timer_ap"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/back" 
+android:weightSum="19.1"
+ android:keepScreenOn="true"
+>
+
+ <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/DashboardButton"
+       
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_weight="2.5"
+         
+         
+      android:gravity="center"
+      />
+    
+    <LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+  
+android:weightSum="2"
+ android:layout_weight="2.5"
+>
+    <Button
+        android:id="@+id/selectbell"
+        style="@style/DashboardButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="Select Custom Bells"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" 
+        />
+
+    <Button
+        android:id="@+id/bell"
+        style="@style/DashboardButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="Ring Bell"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+         />
+
+    
+         
+        
+     </LinearLayout>
+     
+    <TextView
+           android:id="@+id/timer"
+           style="@style/DashboardButton"
+           android:layout_width="wrap_content"
+           android:layout_height="fill_parent"
+           android:layout_weight="2.5"
+          android:text="0:00"
+           android:textColor="#FFFFFF"
+           android:textSize="50sp"
+           android:layout_gravity="center" />
+     <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+     
+    android:orientation="vertical"
+    android:layout_weight="3" >
+     <Button
+        android:id="@+id/start"
+       style="@style/DashboardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+       
+       android:text="Start"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+         android:layout_centerHorizontal="true"/>
+     </RelativeLayout>
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+  
+android:weightSum="3"
+ android:layout_weight="2.9"
+>
+    <Button
+        android:id="@+id/resume"
+        style="@style/DashboardButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+       
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" 
+        />
+
+    <Button
+        android:id="@+id/pause"
+        style="@style/DashboardButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+       
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+         />
+
+    <Button
+        android:id="@+id/reset"
+        style="@style/DashboardButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+      
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" 
+         
+        />
+     </LinearLayout>
+     <LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+  
+android:weightSum="2"
+ android:layout_weight="2.9"
+>
+    
+      <Button
+           android:id="@+id/prev"
+           
+           android:layout_width="wrap_content"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+           android:text="prev"
+           android:textColor="#FFFFFF"
+           android:textSize="15sp"
+           android:layout_gravity="center"/>
+      
+        <Button
+           android:id="@+id/next"
+          
+           android:layout_width="wrap_content"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+           android:text="next"
+           android:textColor="#FFFFFF"
+           android:textSize="15sp"
+           android:layout_gravity="center" />
+      
+      </LinearLayout>
+      
+      <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+     
+    android:orientation="vertical"
+    android:layout_weight="2.8" >
+	 
+       
+      <com.google.android.gms.ads.AdView
+          
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4877332868062678/4193803340"
+         />
+     </RelativeLayout>
+    
+    </LinearLayout>
+    

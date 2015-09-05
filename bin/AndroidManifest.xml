@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.apeiro.debateassistant"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+      <!--   <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.HAHA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>-->
+        
+        
+        
+        <activity android:name="in.apeiro.debateassistant.Splash1"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="in.apeiro.debateassistant.Splash2"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.SPLASH2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="in.apeiro.debateassistant.Homescreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.HOMESCREEN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="in.apeiro.debateassistant.ChooseFormat"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.CHOOSEFORMAT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.Asian"
+            android:screenOrientation="portrait"
+             android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.ASIAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity android:name="in.apeiro.debateassistant.British"
+            android:screenOrientation="portrait"
+             android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.BRITISH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.MotionsAsian"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.MOTIONSAP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.EducationAP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.EDUCATIONAP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.EnvironmentAP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.ENVIRONMENTAP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.FreeSpeechAP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.FREESPEECHAP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.HealthAP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.HEALTHAP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.LawAP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.LAWAP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.MixedAP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.MIXEDAP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.PoliticsAndIRAP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.POLITICSANDIRAP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.ReligionAP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.RELIGIONAP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.SocietyAP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.SOCIETYAP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+          <activity android:name="in.apeiro.debateassistant.MotionsBritish"
+            android:screenOrientation="portrait"
+           >
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.MOTIONSBP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity android:name="in.apeiro.debateassistant.EducationBP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.EDUCATIONBP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.EnvironmentBP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.ENVIRONMENTBP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.FreeSpeechBP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.FREESPEECHBP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.HealthBP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.HEALTHBP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.LawBP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.LAWBP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.MixedBP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.MIXEDBP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.PoliticsAndIRBP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.POLITICSANDIRBP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.ReligionBP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.RELIGIONBP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="in.apeiro.debateassistant.SocietyBP"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.SOCIETYBP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+         <activity android:name="in.apeiro.debateassistant.PrepTime"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.PREPTIME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+           <activity android:name="in.apeiro.debateassistant.ApPm"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.APPM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name="in.apeiro.debateassistant.ApLo"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.APLO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name="in.apeiro.debateassistant.ApDpm"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.APDPM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name="in.apeiro.debateassistant.ApDlo"
+            android:screenOrientation="portrait"
+             android:noHistory="true"
+            >
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.APDLO" />
+                <category android:name="android.intent.category.DEFAULT"
+                    />
+            </intent-filter>
+        </activity>
+         <activity android:name="in.apeiro.debateassistant.ApGw"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.APGW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+          <activity android:name="in.apeiro.debateassistant.ApOw"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.APOW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+            <activity android:name="in.apeiro.debateassistant.ApOppReply"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.APOPPREPLY"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+              <activity android:name="in.apeiro.debateassistant.ApPropReply"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.APPROPREPLY"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+                <activity android:name="in.apeiro.debateassistant.PrepTimeBp"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.PREPTIMEBP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+               <activity android:name="in.apeiro.debateassistant.BpPm"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.BPPM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name="in.apeiro.debateassistant.BpLo"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.BPLO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name="in.apeiro.debateassistant.BpDpm"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.BPDPM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name="in.apeiro.debateassistant.BpDlo"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.BPDLO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="in.apeiro.debateassistant.BpMg"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.BPMG" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="in.apeiro.debateassistant.BpMo"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.BPMO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name="in.apeiro.debateassistant.BpGw"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.BPGW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+          <activity android:name="in.apeiro.debateassistant.BpOw"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.BPOW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+           <activity android:name="in.apeiro.debateassistant.SelectBells"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="in.apeiro.debateassistant.SELECTBELLS"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+          <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+ 
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    </application>
+   
+
+</manifest>

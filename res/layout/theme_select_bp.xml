@@ -1,0 +1,152 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:fillViewport="true" >
+
+<LinearLayout 
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	 
+	android:weightSum="11"
+	android:layout_gravity="center" >
+	
+   <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         style="@style/DashboardButton"
+        android:text="SELECT THEME"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:layout_weight="1"
+         android:layout_centerVertical="true"
+         
+      android:gravity="center"
+      />
+    <Button
+           android:id="@+id/polandir"
+          
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+            android:text="POLITICS AND IR"
+           android:textColor="#FFFFFF"
+           android:textSize="20sp"
+            android:layout_gravity="center"/>
+    
+    <Button
+           android:id="@+id/education"
+          
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+           android:text="EDUCATION"
+           android:textColor="#FFFFFF"
+           android:textSize="20sp"
+           android:layout_gravity="center" />
+    
+    <Button
+           android:id="@+id/environment"
+          
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+            android:text="ENVIRONMENT"
+           android:textColor="#FFFFFF"
+           android:textSize="20sp"
+           android:layout_gravity="center" />
+    
+    <Button
+           android:id="@+id/freespeech"
+          
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+           android:text="FREE SPEECH"
+           android:textColor="#FFFFFF"
+           android:textSize="20sp"
+           android:layout_gravity="center" />
+    
+    <Button
+           android:id="@+id/health"
+          
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+           android:text="HEALTH"
+           android:textColor="#FFFFFF"
+           android:textSize="20sp"
+           android:layout_gravity="center" />
+    
+    <Button
+           android:id="@+id/law"
+          
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+            android:text="LAW"
+           android:textColor="#FFFFFF"
+           android:textSize="20sp"
+           android:layout_gravity="center" />
+    
+    <Button
+           android:id="@+id/religion"
+          
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+            android:text="RELIGION"
+           android:textColor="#FFFFFF"
+           android:textSize="20sp" 
+           android:layout_gravity="center"/>
+    
+    <Button
+           android:id="@+id/society"
+          
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+           android:text="SOCIETY"
+           android:textColor="#FFFFFF"
+           android:textSize="20sp" 
+           android:layout_gravity="center"
+           />
+    
+    <Button
+           android:id="@+id/mixed"
+          
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+            android:text="MIXED"
+           android:textColor="#FFFFFF"
+           android:textSize="20sp" 
+           android:layout_gravity="center"/>
+    
+     
+    
+ <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+     
+    android:orientation="vertical"
+    android:layout_weight="1" >
+	 
+      <com.google.android.gms.ads.AdView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4877332868062678/4193803340"
+       android:gravity="center"   />
+    	
+    </RelativeLayout>
+</LinearLayout>
+
+</ScrollView>

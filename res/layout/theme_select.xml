@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+<LinearLayout 
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/back"
+	android:weightSum="12"
+	android:layout_gravity="center" >
+	
+    <TextView
+           android:id="@+id/selecttheme"
+           style="@style/DashboardButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="SELECT THEME"
+           android:textColor="#FFFFFF"
+           android:textSize="35sp"
+           android:layout_weight="2"
+           android:layout_gravity="center" />
+    
+    <Button
+           android:id="@+id/polandir"
+           style="@style/DashboardButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+            android:text="POLITICS AND IR"
+           android:textColor="#FFFFFF"
+           android:textSize="25sp"
+            android:layout_gravity="center"/>
+    
+    <Button
+           android:id="@+id/education"
+           style="@style/DashboardButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="EDUCATION"
+           android:textColor="#FFFFFF"
+           android:textSize="25sp"
+           android:layout_gravity="center" />
+    
+    <Button
+           android:id="@+id/environment"
+           style="@style/DashboardButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+            android:text="ENVIRONMENT"
+           android:textColor="#FFFFFF"
+           android:textSize="25sp"
+           android:layout_gravity="center" />
+    
+    <Button
+           android:id="@+id/freespeech"
+           style="@style/DashboardButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="FREE SPEECH"
+           android:textColor="#FFFFFF"
+           android:textSize="25sp"
+           android:layout_gravity="center" />
+    
+    <Button
+           android:id="@+id/health"
+           style="@style/DashboardButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="HEALTH"
+           android:textColor="#FFFFFF"
+           android:textSize="25sp"
+           android:layout_gravity="center" />
+    
+    <Button
+           android:id="@+id/law"
+           style="@style/DashboardButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+            android:text="LAW"
+           android:textColor="#FFFFFF"
+           android:textSize="25sp"
+           android:layout_gravity="center" />
+    
+    <Button
+           android:id="@+id/religion"
+           style="@style/DashboardButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+            android:text="RELIGION"
+           android:textColor="#FFFFFF"
+           android:textSize="25sp" 
+           android:layout_gravity="center"/>
+    
+    <Button
+           android:id="@+id/society"
+           style="@style/DashboardButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="SOCIETY"
+           android:textColor="#FFFFFF"
+           android:textSize="25sp" 
+           android:layout_gravity="center"
+           />
+    
+    <Button
+           android:id="@+id/mixed"
+           style="@style/DashboardButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+            android:text="MIXED"
+           android:textColor="#FFFFFF"
+           android:textSize="25sp" 
+           android:layout_gravity="center"/>
+    
+<com.google.android.gms.ads.AdView
+    android:layout_alignParentBottom="true"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4877332868062678/4193803340"
+         android:gravity="center" />
+
+</LinearLayout>
+</ScrollView>
